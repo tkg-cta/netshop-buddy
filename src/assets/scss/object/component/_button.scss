@@ -1,0 +1,84 @@
+// ============================================
+// Component - Button
+// ============================================
+
+.c-button {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ gap: $spacing-3;
+ font-weight: $font-weight-bold;
+ border-radius: $radius-full;
+ transition: all $transition-base;
+ cursor: pointer;
+ border: 2px solid transparent;
+
+ &--primary {
+  background-color: $color-pop-dark;
+  color: $color-white;
+  padding: $spacing-5 $spacing-10;
+  font-size: $font-size-lg;
+  border-radius: $radius-2xl;
+  box-shadow: $shadow-hard;
+  border: 2px solid transparent;
+
+  &:hover {
+   background-color: $color-pop-purple;
+   box-shadow: $shadow-hard-lg;
+   transform: translateY(-4px);
+  }
+
+  &:active {
+   transform: translateY(0);
+   box-shadow: none;
+  }
+ }
+
+ &--secondary {
+  background-color: $color-white;
+  color: $color-pop-dark;
+  border: 2px solid $color-pop-dark;
+  padding: $spacing-2 $spacing-6;
+  font-size: $font-size-sm;
+  box-shadow: $shadow-hard-sm;
+
+  &:hover {
+   background-color: $color-pop-yellow;
+   box-shadow: $shadow-hard;
+   transform: translate(-2px, -2px);
+  }
+
+  &:active {
+   transform: translate(0, 0);
+   box-shadow: none;
+  }
+ }
+
+ &--yellow {
+  background-color: $color-pop-yellow;
+  color: $color-pop-dark;
+  padding: $spacing-4 0;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-black;
+  border-radius: $radius-xl;
+  width: 100%;
+
+  &:hover {
+   background-color: $color-white;
+   transform: scale(1.02);
+  }
+
+  &:active {
+   transform: scale(0.95);
+  }
+ }
+
+ &:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  &:hover {
+   transform: none;
+  }
+ }
+}

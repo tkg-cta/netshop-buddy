@@ -1,0 +1,70 @@
+// ============================================
+// Project - Contact
+// ============================================
+
+.p-contact {
+ padding: $spacing-24 $spacing-6;
+ background-color: $color-pop-yellow;
+ position: relative;
+ overflow: hidden;
+
+ &::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  bottom: -40px;
+  width: 256px;
+  height: 256px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: $radius-full;
+  filter: blur(48px);
+ }
+
+ &::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 128px;
+  height: 128px;
+  background-color: rgba($color-pop-red, 0.2);
+  border-radius: $radius-full;
+  filter: blur(32px);
+ }
+
+ &__inner {
+  max-width: 672px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+ }
+
+ &__header {
+  text-align: center;
+  margin-bottom: $spacing-10;
+ }
+
+ &__icon {
+  width: 64px;
+  height: 64px;
+  background-color: $color-pop-gray;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto $spacing-4;
+  border: 2px solid $color-pop-dark;
+ }
+
+ &__title {
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-black;
+  color: $color-pop-dark;
+  margin-bottom: $spacing-2;
+ }
+
+ &__description {
+  color: $color-gray-600;
+  font-weight: $font-weight-bold;
+ }
+}

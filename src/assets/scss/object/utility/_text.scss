@@ -1,0 +1,35 @@
+// ============================================
+// Utility - Text
+// ============================================
+
+.u-tracking-tight {
+ letter-spacing: -0.05em;
+}
+
+.u-tracking-normal {
+ letter-spacing: 0;
+}
+
+.u-tracking-wide {
+ letter-spacing: 0.05em;
+}
+
+.u-text-center {
+ text-align: center;
+}
+
+.u-text-left {
+ text-align: left;
+}
+
+.u-text-right {
+ text-align: right;
+}
+
+.u-font-bold {
+ font-weight: $font-weight-bold;
+}
+
+.u-font-black {
+ font-weight: $font-weight-black;
+}

@@ -1,0 +1,13 @@
+// ============================================
+// Layout - Main
+// ============================================
+
+.l-main {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ position: relative;
+ background-color: $color-white;
+ flex-grow: 1;
+}

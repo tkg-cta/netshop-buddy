@@ -1,0 +1,55 @@
+// ============================================
+// Component - Form
+// ============================================
+
+.c-form {
+ &__group {
+  margin-bottom: $spacing-6;
+ }
+
+ &__label {
+  display: block;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-black;
+  color: $color-pop-dark;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: $spacing-2;
+ }
+
+ &__input,
+ &__textarea {
+  width: 100%;
+  background-color: $color-pop-gray;
+  border: 2px solid $color-gray-200;
+  border-radius: $radius-xl;
+  padding: $spacing-3 $spacing-4;
+  outline: none;
+  transition: all $transition-base;
+  font-weight: $font-weight-bold;
+  color: $color-pop-dark;
+
+  &::placeholder {
+   color: $color-gray-400;
+  }
+
+  &:focus {
+   background-color: $color-white;
+   border-color: $color-pop-purple;
+  }
+ }
+
+ &__textarea {
+  resize: none;
+  min-height: 120px;
+ }
+
+ &__grid {
+  display: grid;
+  gap: $spacing-6;
+
+  @media (min-width: $breakpoint-md) {
+   grid-template-columns: repeat(2, 1fr);
+  }
+ }
+}

@@ -1,0 +1,84 @@
+// ============================================
+// Layout - Header
+// ============================================
+
+.l-header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: $z-index-fixed;
+ transition: all $transition-base;
+ padding: $spacing-5 0;
+ background-color: transparent;
+
+ &.is-scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  padding: $spacing-3 0;
+  border-bottom: 2px solid $color-pop-dark;
+ }
+
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ &__logo {
+  display: flex;
+  align-items: center;
+  gap: $spacing-2;
+  cursor: pointer;
+
+  &:hover {
+   .l-header__logo-icon {
+    transform: rotate(12deg);
+   }
+
+   .l-header__logo-text {
+    color: $color-pop-purple;
+   }
+  }
+ }
+
+ &__logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: $color-pop-dark;
+  color: $color-pop-yellow;
+  border: 2px solid $color-pop-dark;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $shadow-hard-sm;
+  transition: transform $transition-base;
+ }
+
+ &__logo-text {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-black;
+  letter-spacing: -0.05em;
+  color: $color-pop-dark;
+  transition: color $transition-base;
+ }
+
+ &__logo-accent {
+  &--red {
+   color: $color-pop-red;
+  }
+
+  &--green {
+   color: $color-pop-green;
+  }
+ }
+
+ &__cta {
+  display: none;
+
+  @media (min-width: $breakpoint-md) {
+   display: block;
+  }
+ }
+}

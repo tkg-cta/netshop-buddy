@@ -1,0 +1,36 @@
+// ============================================
+// Foundation - Base
+// ============================================
+
+html {
+ font-size: 16px;
+}
+
+body {
+ font-family: $font-family-base;
+ background-color: $color-white;
+ color: $color-pop-dark;
+ overflow-x: hidden;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+ background-color: $color-pop-purple;
+ color: $color-white;
+}
+
+// Container
+.container {
+ width: 100%;
+ max-width: 1280px;
+ margin: 0 auto;
+ padding: 0 $spacing-6;
+}
+
+// Background patterns
+.bg-dot-pattern {
+ background-color: $color-white;
+ background-image: radial-gradient($color-gray-200 1.5px, transparent 1.5px);
+ background-size: 24px 24px;
+}

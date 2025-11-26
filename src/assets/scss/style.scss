@@ -1,0 +1,33 @@
+// ============================================
+// Main SCSS File - FLOCSS Structure
+// ============================================
+
+// Foundation Layer
+@import 'foundation/variables';
+@import 'foundation/reset';
+@import 'foundation/base';
+@import 'foundation/animations';
+
+// Layout Layer
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/main';
+
+// Object Layer - Component
+@import 'object/component/button';
+@import 'object/component/card';
+@import 'object/component/badge';
+@import 'object/component/form';
+@import 'object/component/media-text';
+
+// Object Layer - Project
+@import 'object/project/hero';
+@import 'object/project/introduction';
+@import 'object/project/service';
+@import 'object/project/plan';
+@import 'object/project/contact';
+
+// Object Layer - Utility
+@import 'object/utility/shadow';
+@import 'object/utility/spacing';
+@import 'object/utility/text';

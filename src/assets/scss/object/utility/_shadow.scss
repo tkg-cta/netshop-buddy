@@ -1,0 +1,32 @@
+// ============================================
+// Utility - Shadow
+// ============================================
+
+.u-shadow-hard-sm {
+ box-shadow: $shadow-hard-sm;
+}
+
+.u-shadow-hard {
+ box-shadow: $shadow-hard;
+}
+
+.u-shadow-hard-lg {
+ box-shadow: $shadow-hard-lg;
+
+}
+
+.u-shadow-hard-hover {
+ transition: all $transition-base;
+
+ &:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+ }
+}
+
+.u-shadow-hard-active {
+ &:active {
+  transform: translate(0px, 0px);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+ }
+}

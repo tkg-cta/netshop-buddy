@@ -1,0 +1,100 @@
+// ============================================
+// Component - Card
+// ============================================
+
+.c-card {
+ background-color: $color-white;
+ border-radius: $radius-xl;
+ padding: $spacing-8;
+ border: 4px solid $color-pop-dark;
+ box-shadow: $shadow-hard;
+ transition: all $transition-base;
+
+ &:hover {
+  box-shadow: $shadow-hard-lg;
+ }
+
+ &--service {
+  border-radius: $radius-xl;
+  padding: $spacing-8;
+  border: 4px solid $color-pop-dark;
+  box-shadow: $shadow-hard;
+  transition: all $transition-base;
+
+  &:hover {
+   box-shadow: $shadow-hard-lg;
+  }
+ }
+
+ &--plan-basic {
+  border-radius: $radius-3xl;
+  padding: $spacing-8;
+  border: 4px solid $color-pop-dark;
+  box-shadow: $shadow-hard-lg;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 128px;
+   height: 128px;
+   background-color: $color-pop-yellow;
+   border-radius: 0 0 0 100%;
+   opacity: 0.2;
+   transition: transform $transition-base;
+  }
+
+  &:hover::before {
+   transform: scale(1.1);
+   transform-origin: top right;
+  }
+ }
+
+ &--option {
+  border-radius: $radius-2xl;
+  padding: $spacing-6;
+  border: 4px solid $color-gray-200;
+  transition: all $transition-base;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+   border-color: $color-gray-400;
+  }
+
+  &.is-selected {
+   background-color: $color-white;
+   border-color: $color-pop-purple;
+   box-shadow: $shadow-hard;
+   transform: translate(-2px, -2px);
+  }
+ }
+
+ &--contact {
+  background-color: $color-white;
+  border-radius: $radius-3xl;
+  padding: $spacing-8;
+  border: 4px solid $color-pop-dark;
+  box-shadow: $shadow-hard-lg;
+
+  @media (min-width: $breakpoint-md) {
+   padding: $spacing-12;
+  }
+ }
+
+ &--intro {
+  background-color: $color-white;
+  border-radius: $radius-3xl;
+  padding: $spacing-8;
+  box-shadow: $shadow-hard-lg;
+  position: relative;
+
+  @media (min-width: $breakpoint-md) {
+   padding: $spacing-10;
+  }
+ }
+}

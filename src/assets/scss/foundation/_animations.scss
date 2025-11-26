@@ -1,0 +1,91 @@
+// ============================================
+// Foundation - Animations
+// ============================================
+
+// Float animation
+@keyframes float {
+
+ 0%,
+ 100% {
+  transform: translateY(0px) rotate(0deg);
+ }
+
+ 50% {
+  transform: translateY(-10px) rotate(2deg);
+ }
+}
+
+// Bounce animation
+@keyframes bounce {
+
+ 0%,
+ 100% {
+  transform: translateY(0);
+ }
+
+ 50% {
+  transform: translateY(-10px);
+ }
+}
+
+// Fade in animation
+@keyframes fadeIn {
+ from {
+  opacity: 0;
+ }
+
+ to {
+  opacity: 1;
+ }
+}
+
+// Slide in from bottom
+@keyframes slideInFromBottom {
+ from {
+  transform: translateY(20px);
+  opacity: 0;
+ }
+
+ to {
+  transform: translateY(0);
+  opacity: 1;
+ }
+}
+
+// Pulse animation
+@keyframes pulse {
+
+ 0%,
+ 100% {
+  opacity: 1;
+ }
+
+ 50% {
+  opacity: 0.5;
+ }
+}
+
+// Animation utility classes
+.animate-float {
+ animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+ animation: float 5s ease-in-out 2.5s infinite;
+}
+
+.animate-bounce {
+ animation: bounce 3s ease-in-out infinite;
+}
+
+.animate-pulse {
+ animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-fade-in {
+ animation: fadeIn 0.3s ease-in;
+}
+
+.animate-slide-in {
+ animation: slideInFromBottom 0.3s ease-out;
+}

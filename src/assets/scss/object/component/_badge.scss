@@ -1,0 +1,73 @@
+// ============================================
+// Component - Badge
+// ============================================
+
+.c-badge {
+ display: inline-block;
+ padding: $spacing-2 $spacing-4;
+ border-radius: $radius-full;
+ font-size: $font-size-sm;
+ font-weight: $font-weight-black;
+ border: 2px solid $color-pop-dark;
+ box-shadow: $shadow-hard-sm;
+
+ &--primary {
+  background-color: $color-white;
+  color: $color-pop-dark;
+  transform: rotate(-2deg);
+ }
+
+ &--blue {
+  background-color: $color-pop-blue;
+  color: $color-white;
+  transform: rotate(-2deg);
+ }
+
+ &--small {
+  font-size: $font-size-xs;
+  padding: $spacing-1 $spacing-2;
+ }
+
+ &--dark {
+  background-color: $color-pop-dark;
+  color: $color-white;
+  font-size: 10px;
+  padding: 2px $spacing-2;
+  border-radius: $radius-md;
+ }
+
+ &--green {
+  background-color: rgba($color-pop-green, 0.2);
+  color: #048060;
+  border: none;
+  box-shadow: none;
+  font-size: $font-size-xs;
+  padding: $spacing-1 $spacing-3;
+  border-radius: $radius-lg;
+ }
+
+ &--ready {
+  background-color: $color-pop-green;
+  color: $color-pop-dark;
+  border-radius: $radius-full;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-black;
+  padding: $spacing-1 $spacing-3;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+ }
+
+ &--added {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $color-pop-purple;
+  color: $color-white;
+  padding: $spacing-1 $spacing-3;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  border-radius: 0 0 0 $radius-xl;
+  border-left: 2px solid $color-pop-dark;
+  border-bottom: 2px solid $color-pop-dark;
+  box-shadow: none;
+ }
+}
