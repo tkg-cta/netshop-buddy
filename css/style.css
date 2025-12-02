@@ -181,34 +181,20 @@ body {
 .l-header__logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   cursor: pointer;
+  transition: opacity 300ms;
 }
-.l-header__logo:hover .l-header__logo-icon {
-  transform: rotate(12deg);
+.l-header__logo:hover {
+  opacity: 0.8;
 }
-.l-header__logo:hover .l-header__logo-text {
-  color: #9D4EDD;
-}
-.l-header__logo-icon {
-  width: 40px;
+.l-header__logo-image {
   height: 40px;
-  background-color: #101010;
-  color: #FFD60A;
-  border: 2px solid #101010;
-  border-radius: 9999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 2px 2px 0px 0px rgb(0, 0, 0);
-  transition: transform 300ms;
+  width: auto;
 }
-.l-header__logo-text {
-  font-size: 1.25rem;
-  font-weight: 900;
-  letter-spacing: -0.05em;
-  color: #101010;
-  transition: color 300ms;
+@media (min-width: 768px) {
+  .l-header__logo-image {
+    height: 48px;
+  }
 }
 .l-header__logo-accent--red {
   color: #FF4D6D;
@@ -1399,16 +1385,16 @@ body {
 }
 .p-service__card-description {
   color: #4B5563;
-  font-size: 0.875rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.8;
   font-weight: 700;
 }
 .p-service__card-note {
   display: block;
   margin-top: 0.5rem;
-  font-size: calc(0.875rem * 0.85);
+  font-size: 0.85rem;
   color: #9CA3AF;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 .p-service__text-highlight {
   background: linear-gradient(transparent 60%, #FFD60A 60%);

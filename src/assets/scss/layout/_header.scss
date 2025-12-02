@@ -28,40 +28,21 @@
  &__logo {
   display: flex;
   align-items: center;
-  gap: $spacing-2;
   cursor: pointer;
+  transition: opacity $transition-base;
 
   &:hover {
-   .l-header__logo-icon {
-    transform: rotate(12deg);
-   }
-
-   .l-header__logo-text {
-    color: $color-pop-purple;
-   }
+   opacity: 0.8;
   }
  }
 
- &__logo-icon {
-  width: 40px;
+ &__logo-image {
   height: 40px;
-  background-color: $color-pop-dark;
-  color: $color-pop-yellow;
-  border: 2px solid $color-pop-dark;
-  border-radius: $radius-full;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: $shadow-hard-sm;
-  transition: transform $transition-base;
- }
+  width: auto;
 
- &__logo-text {
-  font-size: $font-size-xl;
-  font-weight: $font-weight-black;
-  letter-spacing: -0.05em;
-  color: $color-pop-dark;
-  transition: color $transition-base;
+  @media (min-width: $breakpoint-md) {
+   height: 48px;
+  }
  }
 
  &__logo-accent {
