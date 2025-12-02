@@ -27,6 +27,48 @@
   position: relative;
   padding: $spacing-12 0; // Space for floating labels
 
+  .p-intro__subtitle {
+   display: inline-block;
+   font-size: $font-size-sm;
+   font-weight: $font-weight-bold;
+   color: $color-white;
+   background-color: $color-pop-dark;
+   padding: $spacing-2 $spacing-4;
+   border-radius: $radius-full;
+   margin-bottom: $spacing-4;
+   letter-spacing: 0.05em;
+   box-shadow: $shadow-sm;
+  }
+
+  .p-intro__bubble-label {
+   position: absolute;
+   top: -20px;
+   left: 50%;
+   transform: translateX(-140px) rotate(-10deg);
+   background-color: $color-white;
+   border: 2px solid $color-pop-dark;
+   padding: $spacing-1 $spacing-3;
+   border-radius: $radius-lg;
+   font-size: $font-size-xs;
+   font-weight: $font-weight-black;
+   box-shadow: $shadow-sm;
+   white-space: nowrap;
+
+   @media (min-width: $breakpoint-md) {
+    transform: translateX(-200px) rotate(-10deg);
+   }
+
+   &::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    right: 10px;
+    border-width: 6px 6px 0;
+    border-style: solid;
+    border-color: $color-pop-dark transparent transparent transparent;
+   }
+  }
+
   h2 {
    font-size: $font-size-3xl;
    font-weight: $font-weight-black;
