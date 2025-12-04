@@ -1,0 +1,142 @@
+// ============================================
+// Project - Flow
+// ============================================
+
+.p-flow {
+ padding: $spacing-24 0;
+ background-color: $color-gray-100; // #F3F4F6 - Visible light gray
+
+ &__header {
+  text-align: center;
+  max-width: 672px;
+  margin: 0 auto $spacing-16;
+
+  h2 {
+   font-size: $h2-en-pc;
+   font-weight: $font-weight-black;
+   color: $color-pop-dark;
+   margin-bottom: $spacing-6;
+   letter-spacing: -0.02em;
+  }
+
+  p {
+   color: $color-pop-dark;
+   font-size: $font-size-lg;
+   font-weight: $font-weight-bold;
+  }
+ }
+
+ &__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-8;
+  max-width: 800px;
+  margin: 0 auto;
+ }
+
+ &__step {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-8;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+   flex-direction: row;
+   align-items: center;
+   text-align: left;
+   justify-content: space-between;
+  }
+
+  // Colorful Step Numbers (Figma-like)
+  // All text white
+  .p-flow__step-number {
+   color: $color-white;
+   border-color: $color-pop-dark;
+  }
+
+  &:nth-child(1) .p-flow__step-number {
+   background-color: $color-pop-red;
+  }
+
+  &:nth-child(2) .p-flow__step-number {
+   background-color: $color-pop-blue;
+  }
+
+  &:nth-child(3) .p-flow__step-number {
+   background-color: $color-pop-green;
+  }
+
+  &:nth-child(4) .p-flow__step-number {
+   background-color: $color-pop-blue; // Step 4 Blue
+  }
+
+  &:nth-child(5) .p-flow__step-number {
+   background-color: $color-pop-purple;
+  }
+
+ }
+
+ &__step-content {
+  flex: 1;
+  order: 2; // Text below image on mobile
+
+  @media (min-width: $breakpoint-md) {
+   order: 1; // Text left on desktop
+   padding-right: $spacing-8;
+  }
+ }
+
+ &__step-image {
+  flex: 1;
+  order: 1; // Image top on mobile
+  width: 100%;
+  max-width: 320px;
+
+  @media (min-width: $breakpoint-md) {
+   order: 2; // Image right on desktop
+  }
+
+  img {
+   width: 100%;
+   height: auto;
+   border-radius: $radius-lg;
+   box-shadow: $shadow-sm;
+  }
+ }
+
+ &__step-number {
+  display: inline-block;
+  background-color: $color-pop-yellow;
+  color: $color-pop-dark;
+  font-weight: $font-weight-black;
+  padding: $spacing-1 $spacing-3;
+  border-radius: $radius-full;
+  margin-bottom: $spacing-4;
+  border: 2px solid $color-pop-dark;
+  box-shadow: 2px 2px 0 $color-pop-dark;
+ }
+
+ &__step-title {
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-black;
+  color: $color-pop-dark;
+  margin-bottom: $spacing-6;
+  text-transform: uppercase;
+ }
+
+ &__step-text {
+  color: $color-pop-dark;
+  line-height: $line-height-base;
+  font-weight: $font-weight-bold;
+ }
+
+ &__step-arrow {
+  font-size: 2rem;
+  color: $color-pop-dark;
+  font-weight: $font-weight-black;
+  margin: $spacing-2 0;
+ }
+}

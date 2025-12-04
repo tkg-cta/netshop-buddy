@@ -63,7 +63,7 @@
    height: auto;
    position: relative;
    z-index: 10;
-   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1)) grayscale(30%);
+   filter: none; // Removed drop-shadow and grayscale
   }
  }
 
@@ -81,10 +81,10 @@
   }
 
   h3 {
-   font-size: $font-size-2xl;
+   font-size: $font-size-3xl;
    font-weight: $font-weight-black;
    color: $color-pop-dark;
-   margin-bottom: $spacing-6;
+   margin-bottom: $spacing-8;
   }
  }
 }

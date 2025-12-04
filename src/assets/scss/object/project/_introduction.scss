@@ -2,6 +2,23 @@
 // Project - Introduction
 // ============================================
 
+.p-intro-official {
+ background-color: $color-pop-yellow;
+ padding: $spacing-24 0;
+ text-align: center;
+
+ .p-intro__headline {
+  padding-bottom: $spacing-6;
+ }
+
+ .c-media-text--center {
+  display: block;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+ }
+}
+
 .p-intro {
  padding: $spacing-24 0;
  background-color: $color-white;
@@ -19,6 +36,29 @@
    gap: $spacing-16; // 64px on mobile
   }
  }
+
+ &__block {
+  &--official {
+   background-color: $color-pop-yellow;
+   padding: $spacing-8;
+   border-radius: $radius-2xl;
+   // border: 4px solid $color-pop-dark; // Removed border
+   // box-shadow: $shadow-hard-lg; // Removed shadow
+   text-align: center;
+
+   .p-intro__headline {
+    padding-bottom: $spacing-6;
+   }
+
+   .c-media-text--center {
+    display: block; // Override grid
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+   }
+  }
+ }
+
 
  &__headline {
   text-align: center;

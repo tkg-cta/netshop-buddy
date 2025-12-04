@@ -91,43 +91,21 @@
 
      <div class="p-hero__visual">
       <div class="p-hero__visual-wrapper">
-       <div class="p-hero__visual-frame">
-        <div class="p-hero__visual-image">
-         <img src="https://picsum.photos/800/800?random=10" alt="Fashion Item">
-
-         <div class="p-hero__visual-overlay-top">
-          <div class="p-hero__visual-tag">✨ New Arrival</div>
-          <div class="p-hero__visual-heart">
-           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-            <path
-             d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-           </svg>
-          </div>
-         </div>
-
-         <div class="p-hero__visual-overlay-bottom">
-          <div class="p-hero__visual-product">
-           <div class="p-hero__visual-product-info">
-            <p>POP UP SHOP</p>
-            <p>Original T-Shirt</p>
-           </div>
-           <div class="p-hero__visual-price">¥3,500</div>
-          </div>
-         </div>
-        </div>
+       <div class="p-hero__visual-image p-hero__visual-image--simple">
+        <img src="src/assets/img/hero-visual-group.png" alt="Happy Shop Owners Group">
        </div>
-       <div class="p-hero__visual-bg"></div>
       </div>
      </div>
     </div>
-   </div>
   </section>
 
   <!-- Introduction Section -->
-  <section class="p-intro">
-   <div class="container">
+  </section>
 
-    <div class="p-intro__block">
+  <!-- Official Partner Section (Full Width Yellow) -->
+  <section class="p-intro-official">
+   <div class="container">
+    <div class="p-intro__block--official-content">
      <!-- Headline -->
      <div class="p-intro__headline">
       <div class="p-intro__subtitle">We are Official Partner!</div>
@@ -138,19 +116,19 @@
      </div>
 
      <!-- Anxiety Section -->
-     <div class="c-media-text c-media-text--left">
+     <div class="c-media-text c-media-text--center">
       <div class="c-media-text__content">
        <p>はじめてのネットショップ、何から手をつけていいか分からない…。<br>その不安、一人で抱えなくて大丈夫。</p>
-       <p>バディはBASEから公式に認定されたパートナー。<br>実績もノウハウも、バッチリ保証付きです！</p>
-       <p>さらに、バディ経由でショップを開設すると<br>パートナーだけの「限定特典」もプレゼント。</p>
-       <p>安心もお得も、全部バディにお任せください。</p>
-      </div>
-
-      <div class="c-media-text__image">
-       <img src="https://illustrations.popsy.co/amber/surr-question-marks.svg" alt="Confused and Anxious">
+       <p>バディはBASEから公式に認定されたパートナー。<br>バディと一緒に始めれば、パートナー限定の「特典」もついてくるかも？</p>
       </div>
      </div>
     </div>
+   </div>
+  </section>
+
+  <!-- Introduction Section (Rest) -->
+  <section class="p-intro">
+   <div class="container">
 
     <div class="p-intro__block">
      <!-- Headline -->
@@ -181,7 +159,7 @@
       </div>
 
       <div class="c-media-text__image">
-       <img src="https://illustrations.popsy.co/amber/surr-question-marks.svg" alt="Confused and Anxious">
+       <img src="src/assets/img/intro-start-line-final.jpg" alt="Start Line">
       </div>
      </div>
     </div>
@@ -208,14 +186,99 @@
      <!-- Buddy Section -->
      <div class="c-media-text c-media-text--right">
       <div class="c-media-text__image">
-       <img src="https://illustrations.popsy.co/amber/high-five.svg" alt="High Five Celebration">
+       <img src="src/assets/img/intro-buddy-support.png" alt="Buddy Support">
       </div>
 
       <div class="c-media-text__content">
-       <h3>BASEオフィシャルパートナーがサポート</h3>
-       <p>このサービスは、初めてのネットショップ開設を、あなたのそばで伴走する"バディ"。</p>
-       <p>準備も、設定も、悩みも、いっしょに解決します。</p>
+       <h3>BASEオフィシャルパートナーが<br>ネットショップ開設をサポート</h3>
+       <p>このサービスは、ただの「制作代行」ではありません。<br>ご希望があれば公開後もしっかり伴走します。</p>
+       <p>孤独になりがちなショップ運営を、身近な距離感でサポート。<br>一緒に考え、悩み、笑う。そんな関係を目指しています。</p>
       </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- Service Menu Section -->
+  <section class="p-service-menu">
+   <div class="container">
+    <div class="p-service-menu__header">
+     <h2>What We Do</h2>
+     <p>面倒な準備はバディにお任せ。基本プランで、ここまで整います。</p>
+    </div>
+    <div class="p-service-menu__list">
+     <!-- 1. Perfect Setting -->
+     <div class="p-service-menu__item">
+      <div class="p-service-menu__icon">
+       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="M9 12l2 2 4-4" />
+       </svg>
+      </div>
+      <h3 class="p-service-menu__title">Perfect Setting</h3>
+      <p class="p-service-menu__text">決済方法、配送設定、特商法の表記…。ショップ開設に必要な基本設定はすべて代行。申請関係もサポートします。</p>
+     </div>
+
+     <!-- 2. Shop Design -->
+     <div class="p-service-menu__item">
+      <div class="p-service-menu__icon">
+       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+        <line x1="12" y1="18" x2="12.01" y2="18" />
+       </svg>
+      </div>
+      <h3 class="p-service-menu__title">Shop Design</h3>
+      <p class="p-service-menu__text">無料テンプレートを使用し、あなたのブランドに合わせた見やすいデザインに整えます。ロゴがない場合もご相談ください。</p>
+     </div>
+
+     <!-- 3. 10 Products -->
+     <div class="p-service-menu__item">
+      <div class="p-service-menu__icon">
+       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+        <line x1="7" y1="7" x2="7.01" y2="7" />
+       </svg>
+      </div>
+      <h3 class="p-service-menu__title">10 Products</h3>
+      <p class="p-service-menu__text">大変な商品登録もバディにお任せ。最初の10商品まで代行登録するので、すぐに販売できる状態で納品します。</p>
+     </div>
+
+     <!-- 4. Sales Apps -->
+     <div class="p-service-menu__item">
+      <div class="p-service-menu__icon">
+       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+       </svg>
+      </div>
+      <h3 class="p-service-menu__title">Sales Apps</h3>
+      <p class="p-service-menu__text">「クーポン」「レビュー」「送料設定」など、ネットショップに欠かせない基本機能を拡張機能（Apps）で導入済みにしてお渡しします。</p>
+     </div>
+
+     <!-- 5. Partner Benefit -->
+     <div class="p-service-menu__item">
+      <div class="p-service-menu__icon">
+       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 12v10H4V12" />
+        <path d="M2 7h20v5H2z" />
+        <path d="M12 22V7" />
+        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+       </svg>
+      </div>
+      <h3 class="p-service-menu__title">Partner Benefit</h3>
+      <p class="p-service-menu__text">オフィシャルパートナーだけの特別プレゼント！「総額1万円分のクーポン」や「BASEロゴ非表示」などの特典をご用意。</p>
+     </div>
+
+     <!-- 6. 1H Meeting -->
+     <div class="p-service-menu__item">
+      <div class="p-service-menu__icon">
+       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path
+         d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+       </svg>
+      </div>
+      <h3 class="p-service-menu__title">1H Meeting</h3>
+      <p class="p-service-menu__text">「使いこなせるかな？」という不安を解消。オープン前に1時間のオンライン相談会を実施。操作方法などなんでも聞いてください。</p>
      </div>
     </div>
    </div>
@@ -275,6 +338,83 @@
       <p class="p-service__card-description">
        国内最大級「BASE」オフィシャルパートナーによる制作。セキュリティも決済も万全の状態でお渡し。
       </p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- Flow Section -->
+  <section class="p-flow">
+   <div class="container">
+    <div class="p-flow__header">
+     <h2>Ready to Launch?</h2>
+     <p>ネットショップを開店するまでの流れ</p>
+    </div>
+    <div class="p-flow__steps">
+     <!-- Step 1 -->
+     <div class="p-flow__step">
+      <div class="p-flow__step-content">
+       <div class="p-flow__step-number">Step 1</div>
+       <h3 class="p-flow__step-title">CONTACT US</h3>
+       <p class="p-flow__step-text">まずは下のフォームから気軽に連絡。どんなお店にしたいかお聞かせください。お気軽にご相談お待ちしております</p>
+      </div>
+      <div class="p-flow__step-image">
+       <img src="src/assets/img/flow-step-1.png" alt="Contact Us">
+      </div>
+     </div>
+     <div class="p-flow__step-arrow">↓</div>
+
+     <!-- Step 2 -->
+     <div class="p-flow__step">
+      <div class="p-flow__step-content">
+       <div class="p-flow__step-number">Step 2</div>
+       <h3 class="p-flow__step-title">MAKE A PLAN</h3>
+       <p class="p-flow__step-text">ご連絡を確認したら、ヒアリングシートフォームをお届けします。こちらに理想のお店を描いていってください。</p>
+      </div>
+      <div class="p-flow__step-image">
+       <img src="src/assets/img/flow-step-2.png" alt="Make a Plan">
+      </div>
+     </div>
+     <div class="p-flow__step-arrow">↓</div>
+
+     <!-- Step 3 -->
+     <div class="p-flow__step">
+      <div class="p-flow__step-content">
+       <div class="p-flow__step-number">Step 3</div>
+       <h3 class="p-flow__step-title">BUILD</h3>
+       <p class="p-flow__step-text">ヒアリングシートをもとに、用意して欲しいお写真などの素材をお知らせします。すべて揃ったらあとは待つだけ！バディが一生懸命あなたのサイトを作ります。</p>
+      </div>
+      <div class="p-flow__step-image">
+       <img src="src/assets/img/flow-step-3.png" alt="Build">
+      </div>
+     </div>
+     <div class="p-flow__step-arrow">↓</div>
+
+     <!-- Step 4 -->
+     <div class="p-flow__step">
+      <div class="p-flow__step-content">
+       <div class="p-flow__step-number">Step 4</div>
+       <h3 class="p-flow__step-title">STUDY SESSION</h3>
+       <p class="p-flow__step-text">
+        ここまできたらあと一歩です！<br>この時間はバディからあなたへの贈り物。<br>あなたの不安をあらかじめヒアリングし、1時間しっかりお答えします。完成したショップを一緒に確認しながら未来への不安を解消しましょう。</p>
+      </div>
+      <div class="p-flow__step-image">
+       <img src="src/assets/img/flow-step-4.png" alt="Study Session">
+      </div>
+     </div>
+     <div class="p-flow__step-arrow">↓</div>
+
+     <!-- Step 5 -->
+     <div class="p-flow__step">
+      <div class="p-flow__step-content">
+       <div class="p-flow__step-number">Step 5</div>
+       <h3 class="p-flow__step-title">Open!</h3>
+       <p class="p-flow__step-text">
+        ついにオーナーデビュー！自分の城が持てる瞬間です。<br>この先もバディと一緒にいたい方には伴走プランをご用意していますのでご安心ください。<br>心強い味方になれるようがんばります！</p>
+      </div>
+      <div class="p-flow__step-image">
+       <img src="src/assets/img/flow-step-5.png" alt="Open!">
+      </div>
      </div>
     </div>
    </div>
